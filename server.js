@@ -9,7 +9,7 @@ var app=express();
 var port=process.env.PORT||3000;
 
 
-mongoose.connect('mongodb://anees:sofittech@ds141766.mlab.com:41766/image');
+mongoose.connect('mongodb://sherryduggal:sofittech@ds051720.mlab.com:51720/image');
 mongoose.connection.on('connected',function (){
   console.log('connected to database');
 });
@@ -26,3 +26,4 @@ app.all('*',(req,res)=>res.send({msg:'insan ban oay'}));
 app.listen(port,function(){
   console.log('server is live on port'+port);
 });
+
